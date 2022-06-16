@@ -19,13 +19,14 @@
     <section id="intro">
         <div class="container">
             <div class="row flex-column">
-                <div class="col">
+                <div class="col d-flex justify-content-around m-5">
                     <h2>Esplora tutta la lista!</h2>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false" autocomplete="off">Aggiungi</button>
                 </div>
                 <!-- /.col -->
                 <div class="col">
                     <table style="width:100%">
-                        <tr>
+                        <tr class="border">
                             <th>Id</th>
                             <th>Title</th>
                             <th>Description</th>
@@ -34,18 +35,26 @@
                             <th>Series</th>
                             <th>Sale_date</th>
                             <th>Type</th>
+                            <th>Controller</th>
                         </tr>
                         @foreach ($comics as $comic)
+
                         <tr>
-                            <td>{{$comic->id}}</td>
-                            <td>{{$comic->title}}</td>
-                            <td>{{$comic->description}}</td>
-                            <td><img width=50 src="{{$comic->thumb}}" alt="{{$comic->title}}"></td>
-                            <td>{{$comic->price}}</td>
-                            <td>{{$comic->series}}</td>
-                            <td>{{$comic->sale_date}}</td>
-                            <td>{{$comic->type}}</td>
+                            <td class="border">{{$comic->id}}</td>
+                            <td class="border">{{$comic->title}}</td>
+                            <td class="border">{{$comic->description}}</td>
+                            <td class="border"><img width=50 src="{{$comic->thumb}}" alt="{{$comic->title}}"></td>
+                            <td class="border">{{$comic->price}}</td>
+                            <td class="border">{{$comic->series}}</td>
+                            <td class="border">{{$comic->sale_date}}</td>
+                            <td class="border">{{$comic->type}}</td>
+                            <td class="border">
+                                <a href="{{route('comic.show', $comic)}}">View</a>
+                                <a href="#">Edit</a>
+                                <a href="#">Delete</a>
+                            </td>
                         </tr>
+
                         @endforeach
                     </table>
                 </div>
