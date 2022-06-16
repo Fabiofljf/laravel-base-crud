@@ -17,7 +17,13 @@
 <body>
     @section ('content')
     <section id="intro">
-        <h1>weee</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
     </section>
     <!-- /#intro -->
     @endsection
