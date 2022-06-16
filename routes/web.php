@@ -20,6 +20,6 @@ Route::get('/comic', 'ComicController@index')->name('comic.index'); // - Percors
 
 Route::get('/comic/create', 'ComicController@create')->name('comic.create'); // - Percorso create
 
-Route::get('/comic/store', 'ComicController@store')->name('comic.index'); // - Percorso store
+Route::post('/comic/store', 'ComicController@store')->name('comic.store'); // - Percorso store
 
 Route::get('/comic/{comic}', 'ComicController@show')->name('comic.show'); // - Percorso show

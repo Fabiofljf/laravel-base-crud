@@ -45,6 +45,34 @@
                         </div>
 
                         <div class="mb-3 row">
+                            <label for="price" class="col-xs-4 col-form-label">Price</label>
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" name="price" id="inputName" placeholder="Price">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="series" class="col-xs-4 col-form-label">Series</label>
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" name="series" id="inputName" placeholder="Series">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="sale_date" class="col-xs-4 col-form-label">Sale_date</label>
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" name="sale_date" id="inputName" placeholder="Sale_date">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="type" class="col-xs-4 col-form-label">Type</label>
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" name="type" id="inputName" placeholder="Type">
+                            </div>
+                        </div>
+                    
+                        <div class="mb-3 row">
                             <div class="offset-sm-4 col-sm-8">
                                 <button type="submit" class="btn btn-primary">Invia!</button>
                             </div>

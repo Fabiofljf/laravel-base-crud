@@ -21,7 +21,9 @@
             <div class="row flex-column">
                 <div class="col d-flex justify-content-around m-5">
                     <h2>Esplora tutta la lista!</h2>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false" autocomplete="off">Aggiungi</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false" autocomplete="off">
+                        <a class="text-light" href="{{route('comic.create')}}">Aggiungi</a>
+                    </button>
                 </div>
                 <!-- /.col -->
                 <div class="col">

@@ -40,6 +40,7 @@ class ComicController extends Controller
         //dd($request->all());
         $data = $request->all();
         Comic::create($data);
+        
 
         return redirect()->route('comic.index');
 
