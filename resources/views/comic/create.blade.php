@@ -24,23 +24,23 @@
                     <form action="{{route('comic.store')}}" method="post">
                         @csrf
                         <div class="mb-3 row">
-                            <label for="inputName" class="col-xs-4 col-form-label">Title</label>
+                            <label for="title" class="col-xs-4 col-form-label">Title</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Title">
+                                <input type="text" class="form-control" name="title" id="inputName" placeholder="Title">
                             </div>
                         </div>
 
                         <div class="mb-3 row">
-                            <label for="inputName" class="col-xs-4 col-form-label">Description</label>
+                            <label for="description" class="col-xs-4 col-form-label">Description</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Description">
+                                <input type="text" class="form-control" name="description" id="inputName" placeholder="Description">
                             </div>
                         </div>
 
                         <div class="mb-3 row">
-                            <label for="inputName" class="col-xs-4 col-form-label">Thumb</label>
+                            <label for="thumb" class="col-xs-4 col-form-label">Thumb</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Immagine">
+                                <input type="text" class="form-control" name="thumb" id="inputName" placeholder="Immagine">
                             </div>
                         </div>
 
