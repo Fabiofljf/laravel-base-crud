@@ -35,15 +35,18 @@
                             <th>Sale_date</th>
                             <th>Type</th>
                         </tr>
-                        @forelse ($comics as $comic)
+                        @foreach ($comics as $comic)
                         <tr>
-                            <td>Centro comercial Moctezuma</td>
-                            <td>Francisco Chang</td>
-                            <td>Mexico</td>
+                            <td>{{$comic->id}}</td>
+                            <td>{{$comic->title}}</td>
+                            <td>{{$comic->description}}</td>
+                            <td><img width=50 src="{{$comic->thumb}}" alt="{{$comic->title}}"></td>
+                            <td>{{$comic->price}}</td>
+                            <td>{{$comic->series}}</td>
+                            <td>{{$comic->sale_date}}</td>
+                            <td>{{$comic->type}}</td>
                         </tr>
-                        @else
-                        <h4>La lista è vuota... Aggiungi! </h4>
-                        @endforelse
+                        @endforeach
                     </table>
                 </div>
                 <!-- /.col list-->
