@@ -18,4 +18,8 @@ Route::get('/', 'PageController@home')->name('index'); // - Percorso della home
 
 Route::get('/comic', 'ComicController@index')->name('comic.index'); // - Percorso lista comics
 
-Route::get('/comic/{comic}', 'ComicController@show')->name('comic.show'); // - Percorso singolo comics
+Route::get('/comic/create', 'ComicController@create')->name('comic.create'); // - Percorso create
+
+Route::get('/comic/store', 'ComicController@store')->name('comic.store'); // - Percorso store
+
+Route::get('/comic/{comic}', 'ComicController@show')->name('comic.show'); // - Percorso show
