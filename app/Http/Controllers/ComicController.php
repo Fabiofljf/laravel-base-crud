@@ -56,37 +56,37 @@ class ComicController extends Controller
         return view('comic.show', compact('comic'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Comic  $comic
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Comic $comic)
-    {
-        //
-    }
+    // /**
+    //  * Show the form for editing the specified resource.
+    //  *
+    //  * @param  \App\Comic  $comic
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function edit(Comic $comic)
+    // {
+    //     //
+    // }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Comic  $comic
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Comic $comic)
-    {
-        //
-    }
+    // /**
+    //  * Update the specified resource in storage.
+    //  *
+    //  * @param  \Illuminate\Http\Request  $request
+    //  * @param  \App\Comic  $comic
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function update(Request $request, Comic $comic)
+    // {
+    //     //
+    // }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Comic  $comic
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Comic $comic)
-    {
-        //
-    }
+    // /**
+    //  * Remove the specified resource from storage.
+    //  *
+    //  * @param  \App\Comic  $comic
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function destroy(Comic $comic)
+    // {
+    //     //
+    // }
 }
