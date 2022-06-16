@@ -18,10 +18,35 @@
     @section ('content')
     <section id="intro">
         <div class="container">
-            <div class="row">
+            <div class="row flex-column">
                 <div class="col">
-                    
+                    <h2>Esplora tutta la lista!</h2>
                 </div>
+                <!-- /.col -->
+                <div class="col">
+                    <table style="width:100%">
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Thumb</th>
+                            <th>Price</th>
+                            <th>Series</th>
+                            <th>Sale_date</th>
+                            <th>Type</th>
+                        </tr>
+                        @forelse ($comics as $comic)
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+                        @else
+                        <h4>La lista è vuota... Aggiungi! </h4>
+                        @endforelse
+                    </table>
+                </div>
+                <!-- /.col list-->
             </div>
         </div>
     </section>
