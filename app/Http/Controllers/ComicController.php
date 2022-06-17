@@ -40,7 +40,7 @@ class ComicController extends Controller
     {
         //dd($request->all());
         //$data = $request->all();
-        $validated_data = $request->validate();
+        $validated_data = $request->validated();
         Comic::create($validated_data);
         
 
@@ -80,7 +80,7 @@ class ComicController extends Controller
     public function update(ComicRequest $request, Comic $comic)
     {
         //$data = $request->all();
-        $validated_data = $request->validate();
+        $validated_data = $request->validated();
         $comic->update($validated_data);
 
         return redirect()->route('comic.index', compact('comic'));

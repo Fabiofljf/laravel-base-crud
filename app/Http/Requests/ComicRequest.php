@@ -28,9 +28,9 @@ class ComicRequest extends FormRequest
             'description' => 'required',
             'thumb' => 'required',
             'price' => 'required',
-            'series' => 'nullable',
-            'sale_date' => 'nullable',
-            'type' => 'nullable',
+            'series' => 'required',
+            'sale_date' => 'required',
+            'type' => 'required',
         ];
     }
 }
