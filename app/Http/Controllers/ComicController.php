@@ -33,14 +33,14 @@ class ComicController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  App\Http\Requests\ComicRequest  $request
+     * @param  \App\Http\Requests\ComicRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(ComicRequest $request)
     {
         //dd($request->all());
         //$data = $request->all();
-        $validated_data = $request->validated();
+        $validated_data = $request->validate();
         Comic::create($validated_data);
         
 
@@ -73,14 +73,14 @@ class ComicController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  App\Http\Requests\ComicRequest  $request
+     * @param  \App\Http\Requests\ComicRequest  $request
      * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
     public function update(ComicRequest $request, Comic $comic)
     {
         //$data = $request->all();
-        $validated_data = $request->validated();
+        $validated_data = $request->validate();
         $comic->update($validated_data);
 
         return redirect()->route('comic.index', compact('comic'));

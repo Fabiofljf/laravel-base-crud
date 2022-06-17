@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <form action="{{route('comic.update' $comic->id)}}" method="post">
+                    <form action="{{route('comic.update', $comic)}}" method="post">
                         @csrf
                         @method('PUT')
                         <div class="mb-3 row">
@@ -34,7 +34,7 @@
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
-
+                        <!-- /title -->
                         <div class="mb-3 row">
                             <label for="description" class="col-xs-4 col-form-label">Description</label>
                             <div class="col-xs-8">
@@ -45,7 +45,7 @@
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
-
+                        <!-- /description -->
                         <div class="mb-3 row">
                             <label for="thumb" class="col-xs-4 col-form-label">Thumb</label>
                             <div class="col-xs-8">
@@ -56,7 +56,7 @@
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
-
+                        <!-- /thumb -->
                         <div class="mb-3 row">
                             <label for="price" class="col-xs-4 col-form-label">Price</label>
                             <div class="col-xs-8">
@@ -67,7 +67,7 @@
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
-
+                        <!-- /price -->
                         <div class="mb-3 row">
                             <label for="series" class="col-xs-4 col-form-label">Series</label>
                             <div class="col-xs-8">
@@ -78,7 +78,7 @@
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
-
+                        <!-- /series -->
                         <div class="mb-3 row">
                             <label for="sale_date" class="col-xs-4 col-form-label">Sale_date</label>
                             <div class="col-xs-8">
@@ -89,7 +89,7 @@
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
-
+                        <!-- /sale_date -->
                         <div class="mb-3 row">
                             <label for="type" class="col-xs-4 col-form-label">Type</label>
                             <div class="col-xs-8">
@@ -100,7 +100,7 @@
                             <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
-                    
+                        <!-- /type -->
                         <div class="mb-3 row">
                             <div class="offset-sm-4 col-sm-8">
                                 <button type="submit" class="btn btn-primary">Invia!</button>

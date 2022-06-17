@@ -26,8 +26,8 @@ Route::post('/comic/store', 'ComicController@store')->name('comic.store'); // - 
 
 Route::get('/comic/{comic}', 'ComicController@show')->name('comic.show'); // - Percorso show
 
-Route::get('/comic/edit{comic}', 'ComicController@edit')->name('comic.edit'); // - Percorso edit
+Route::get('/comic/edit/{comic}', 'ComicController@edit')->name('comic.edit'); // - Percorso edit
 
-Route::put('/comic/update{comic}', 'ComicController@update')->name('comic.update'); // - Percorso update
+Route::put('/comic/update/{comic}', 'ComicController@update')->name('comic.update'); // - Percorso update
 
-Route::delete('/comic/destroy{comic}', 'ComicController@destroy')->name('comic.destroy'); // - Percorso destroy
+Route::delete('/comic/destroy/{comic}', 'ComicController@destroy')->name('comic.destroy'); // - Percorso destroy
