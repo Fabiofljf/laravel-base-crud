@@ -1,7 +1,43 @@
 // - Importo bootstrap
 @use "bootstrap";
 // COMMONS ROULES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
 // UTILITIES
 // HEADER
+
+/* Index - home */
+
+#jumbotron {
+    background-image: url('https://wallpaperaccess.com/full/692818.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#enter {
+    background-image: url('https://st2.depositphotos.com/4497765/8845/v/950/depositphotos_88456694-stock-illustration-comic-book-background-with-blank.jpg');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+.local {
+    position: absolute;
+    top: 44%;
+    left: 47%;
+}
+
 // MAIN
 // FOOTER

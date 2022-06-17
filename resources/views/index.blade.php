@@ -15,6 +15,8 @@
 
 <body>
     @section ('content')
+    <section id="jumbotron"></section>
+    <!-- /#jumbotron -->
     <section id="intro_home">
         <div class="container">
             <div class="row">
@@ -27,6 +29,12 @@
         </div>
     </section>
     <!-- /#intro_home -->
+    <section id="enter">
+        <h2 class="local">
+            <a href="{{route('comic.index')}}">ENTRA!</a>
+        </h2>
+    </section>
+    <!-- /#enter -->
     @endsection
 </body>
 
