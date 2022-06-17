@@ -44,7 +44,7 @@
                         <tr>
                             <td class="border">{{$comic->id}}</td>
                             <td class="border">{{$comic->title}}</td>
-                            <td class="border">{{$comic->description}}</td>
+                            <td class="border text_special">{{$comic->description}}</td>
                             <td class="border"><img width=50 src="{{$comic->thumb}}" alt="{{$comic->title}}"></td>
                             <td class="border">{{$comic->price}}</td>
                             <td class="border">{{$comic->series}}</td>
@@ -72,7 +72,7 @@
                                     </svg>
                                 </button>
                                 <!-- Modal -->
-                                <div class="modal fade" id="delete-comic-{{$comic}}" tabindex="-1" role="dialog" aria-labelledby="modelTitle-{{$comic->id}}" aria-hidden="true">
+                                <div class="modal fade" id="#delete-comic-{{$comic}}" tabindex="-1" role="dialog" aria-labelledby="modelTitle-{{$comic->id}}" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">

@@ -24,14 +24,13 @@ class ComicRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required' | 'max:120',
+            'title' => 'required',
             'description' => 'required',
             'thumb' => 'required',
-            'price' => 'required' | 'max:7',
+            'price' => 'required',
             'series' => 'nullable',
             'sale_date' => 'nullable',
             'type' => 'nullable',
-
         ];
     }
 }
