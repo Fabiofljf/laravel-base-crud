@@ -27,7 +27,7 @@
                         <div class="mb-3 row">
                             <label for="title" class="col-xs-4 col-form-label">Title</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" id="inputName" placeholder="American Vampire...">
+                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" id="inputName" placeholder="American Vampire..." value="{{old('title')}}">
                             </div>
                             <small id="helpId" class="text-muted">type title here</small>
                             @error('title')
@@ -38,7 +38,7 @@
                         <div class="mb-3 row">
                             <label for="description" class="col-xs-4 col-form-label">Description</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control @error('description') is-invalid @enderror" name="description" id="inputName" placeholder="lorem...">
+                                <input type="text" class="form-control @error('description') is-invalid @enderror" name="description" id="inputName" placeholder="lorem..." value="{{old('description')}}">
                             </div>
                             <small id="helpId" class="text-muted">type description here</small>
                             @error('description')
@@ -49,7 +49,7 @@
                         <div class="mb-3 row">
                             <label for="thumb" class="col-xs-4 col-form-label">Thumb</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control @error('thumb') is-invalid @enderror" name="thumb" id="inputName" placeholder="https://...">
+                                <input type="text" class="form-control @error('thumb') is-invalid @enderror" name="thumb" id="inputName" placeholder="https://..." value="{{old('thumb')}}">
                             </div>
                             <small id="helpId" class="text-muted">type thumb here</small>
                             @error('thumb')
@@ -60,7 +60,7 @@
                         <div class="mb-3 row">
                             <label for="price" class="col-xs-4 col-form-label">Price</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control @error('price') is-invalid @enderror" name="price" id="inputName" placeholder="10.00">
+                                <input type="text" class="form-control @error('price') is-invalid @enderror" name="price" id="inputName" placeholder="10.00" value="{{old('price')}}">
                             </div>
                             <small id="helpId" class="text-muted">type price here</small>
                             @error('price')
@@ -71,7 +71,7 @@
                         <div class="mb-3 row">
                             <label for="series" class="col-xs-4 col-form-label">Series</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control @error('series') is-invalid @enderror" name="series" id="inputName" placeholder="Batman">
+                                <input type="text" class="form-control @error('series') is-invalid @enderror" name="series" id="inputName" placeholder="Batman" value="{{old('series')}}">
                             </div>
                             <small id="helpId" class="text-muted">type series here</small>
                             @error('series')
@@ -82,7 +82,7 @@
                         <div class="mb-3 row">
                             <label for="sale_date" class="col-xs-4 col-form-label">Sale_date</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control @error('sale_date') is-invalid @enderror" name="sale_date" id="inputName" placeholder="2022/01/01">
+                                <input type="text" class="form-control @error('sale_date') is-invalid @enderror" name="sale_date" id="inputName" placeholder="2022/01/01" value="{{old('sale_date')}}">
                             </div>
                             <small id="helpId" class="text-muted">type sale_date here</small>
                             @error('sale_date')
@@ -93,11 +93,11 @@
                         <div class="mb-3 row">
                             <label for="type" class="col-xs-4 col-form-label">Type</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control @error('type') is-invalid @enderror" name="type" id="inputName" placeholder="Comic book">
+                                <input type="text" class="form-control @error('type') is-invalid @enderror" name="type" id="inputName" placeholder="Comic book" value="{{old('type')}}">
                             </div>
                             <small id="helpId" class="text-muted">type type here</small>
                             @error('type')
-                            <div class="alert alert-danger">{{$message}}</div>
+                            <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <!-- /type -->
